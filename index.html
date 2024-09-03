@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script language="javascript"> 
+        function showConfirmation() {
+    var emailInput = document.getElementById('userEmail').value;
+    
+    if (emailInput) { // Verifica se o campo de email não está vazio
+        document.getElementById('confirmationMessage').style.display = 'block';
+    } else {
+        alert("Por favor, insira um email válido.");
+    }
+}
+
+    </script>
+
+    <title>FURIA CS</title>
+</head>
+<body>
+    <!--Header-->
+    <div class ="bg-home">
+        <header>
+           
+            <nav class="header-content container">
+                <div class="header-icons">
+                    <a href="#">
+                        <i class="fa-brands fa fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa fa-facebook fa-2x"></i>
+                    </a>
+                </div>
+
+                <div class="header-logo"> 
+                    <img
+                    src="assets/Logo.png"
+                    alt="Logo da Furia"
+                    
+                />
+                </div>
+
+                <div>
+                    <a class="header-button" href="#">
+                        Conheça a nossa loja
+                    </a>
+                </div>
+                
+            </nav>
+
+            <main class="hero container">
+                <h1> Jogamos com garra, vencemos com FURIA.</h1>
+                <p>A maior equipe de Counter-Strike do Brasil</p>
+                <a href="#" class="button-contact" target="_blank">
+                    Conheça a FURIA
+                </a>
+            </main>
+
+        </header>
+        
+    <div\>
+    
+    <section class="about">
+        <div class="container about-content">
+            <div>
+                <img
+                    src="assets/Time FURIA.jpg"
+                    alt="Elenco atual da FURIA"
+                  />                                    
+            </div>
+
+            <div class="about-description">
+                <h2>SOBRE NÓS:</h2>
+                <p>Somos a FURIA, um time brasileiro de Counter-Strike fundado em 2017. Desde nosso início, buscamos construir uma trajetória sólida no cenário competitivo. Começamos como uma equipe promissora e, com o tempo, conquistamos reconhecimento nacional e internacional. Ao longo dos anos, enfrentamos adversidades e desafios, mas sempre evoluímos e nos adaptamos. Com uma combinação de talento e estratégia, fomos ganhando espaço entre os grandes times do mundo, participando de campeonatos importantes e deixando nossa marca na história do Counter-Strike.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="players">
+
+        <div class="players-content players">
+            <h2>players:</h2>
+        </div>
+
+        <section class="playerdesc">
+            <div class="player">
+                <img src="assets/FalleN.webp"
+                 alt="FalleN">
+
+                 <div class="player-info">
+                    <strong>FalleN</strong>
+                    <button>
+                        HLTV Profile
+                    </button>
+
+                 </div>
+            </div>
+
+            <div class="player">
+                <img src="assets/KSCERATO.webp"
+                 alt="KSCERATO">
+                 <div class="player-info">
+                    
+                    <strong>KSCERATO</strong>
+                    <button>
+                        HLTV Profile
+                    </button>
+                 </div>
+            </div>
+
+            <div class="player">
+                <img src="assets/chelo.webp"
+                 alt="chelo">
+                 <div class="player-info">
+                    <strong>chelo</strong>
+                    <button>
+                        HLTV Profile
+                    </button>
+                 </div>
+            </div>
+
+            <div class="player">
+                <img src="assets/yuurih.webp"
+                 alt="yuurih">
+                 <div class="player-info">
+                    <strong>yuurih</strong>
+                    <button>
+                        HLTV Profile
+                    </button>
+                 </div>
+            </div>
+
+            <div class="player">
+                <img src="assets/skullz.webp"
+                 alt="skullz">
+                 <div class="player-info">
+                    <strong>skullz</strong>
+                    <button>
+                        HLTV Profile
+                    </button>
+                 </div>
+            </div>
+            
+
+        </section>
+    </section>
+    
+    <div class="newsletter-notification">
+        <h2>Gostou de nos conhecer?</h2>
+        <p>Se inscreva na nossa newsletter semanal para toda semana receber notícias da FURIA!</p>
+        <input type="email" id="userEmail" placeholder="Seu email" required>
+        <button onclick="showConfirmation()">Inscreva-se</button>
+    </div>
+    
+    <div class="newsletter-confirmation" id="confirmationMessage" style="display: none;">
+        <p>Inscrição confirmada! Obrigado por se inscrever na nossa newsletter. 
+            <br> Você receberá notícias da FURIA semanalmente.</p> <br>
+        <button onclick="this.parentElement.style.display='none';">Fechar</button>
+    </div>
+    
+    
+    
+    
+    
+
+    
+</body>
+</html>
